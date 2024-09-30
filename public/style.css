@@ -1,0 +1,112 @@
+
+@import url('https://fonts.cdnfonts.com/css/charger-pro');
+@import url('https://fonts.cdnfonts.com/css/florilst-realik');
+
+.clear { background-image: url('/images/clear.jpg');background-size: cover;}
+.cloudy { background-image: url('/images/cloudy.jpg'); background-size: cover; }
+.rainy { background-image: url('/images/rainy.jpg'); background-size: cover; }
+.snowy { background-image: url('/images/snowy.jpg'); background-size: cover; }
+.thunderstorm { background-image: url('/images/thunderstorm.jpg');background-size: cover;  }
+.atmosphere { background-image: url('/images/atmosphere.jpg');background-size: cover;  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    height: 200px;
+    align-items: center;
+}
+.content{
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template: 1fr 4fr 0.3fr 1.5fr / 3fr 2fr;
+    background-size: cover;
+    font-family: 'Charger Pro', sans-serif;
+    font-size: medium;
+}
+
+.name_search{
+    grid-area: 1 / 1/ 2/ 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.current{
+    grid-area: 2/ 1/ 3/ 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hourly{
+    grid-area: 2/ 2/ 3/ 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.days_head{
+    grid-area: 3/ 1/ 4/ 3;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background: rgba(240, 248, 255, 0.15);
+    border-radius: 10px;
+
+}
+
+
+.daily{
+    grid-area: 4/ 1/ 5/ 3;
+    display: flex;
+    justify-content: space-evenly;
+    gap :20px;
+
+
+
+}
+.daily #daily_data{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(240, 248, 255, 0.4);
+    border-radius: 10px;
+    border: 4px solid black;
+}
+h2,h1{
+    font-family: 'Florilst Realik', sans-serif;
+    margin: 0px;
+}
+
+li{
+    margin: 6px;
+    padding: 2px;
+    border-radius: 10px;
+    background: rgba(240, 248, 255, 0.25);
+
+}
+
+button,input {
+    border-radius: 10px;
+    height:2rem;
+    background: rgba(240, 248, 255, 0.4);
+    border: 4px solid black;
+    font-family: 'Charger Pro', sans-serif;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1; 
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="<%= weatherClass %> ">
+    <div class="content">
+        <div class="name_search">
+            <h1>Dinesh Weather App</h1>
+            <form action="/" method="post">
+                <input type="text" name="city" placeholder="Enter city">
+                <button type="submit">Get Weather</button>
+            </form>
+        </div>
+
+        <div class = "current">
+            <% if (weather) { %>
+                <img src="/icons/<%= weatherClass %>.png" alt="icon respect to the weather">
+                <h2>Current Weather in <%= weather.name %> - <%= weather.weather[0].description %></h2>
+                <ul>
+                    <li>Temperature: <%= weather.main.temp %>°C</li>
+                    <li>Feels Like: <%= weather.main.feels_like %></li>
+                    <li>Pressure: <%= weather.main.pressure %></li>
+                    <li>Humidity: <%= weather.main.humidity %></li>
+                    <li>visibilityisibility: <%= weather.visibility %></li>
+                </ul>
+        </div>
+
+        <div class="hourly">
+            <h2>Today's Hourly Forecast</h2>
+            <% todayForecast.forEach(hour => { %>
+                <ul>
+                <li><em>Date</em> : <%= hour.dt_txt %>   <em>Temperature</em> : <%= hour.main.temp %>°C   <em>Description</em> : <%= hour.weather[0].description %></li>
+                </ul>
+            <% }); %>
+        </div>
+
+        <div class = days_head> <h2>Up Coming Days Forecast in <%= weather.name %></h2> </div>
+        <div class="daily">
+                <% daily.forEach((day,index) => { %>
+                <div id = "daily_data"> The Date : <%= new Date(day.dt_txt).toLocaleDateString() %><br> Temperature : <%= day.main.temp %>°C <br>Weather Description : <%= day.weather[0].description %></div><br>
+                <% }); %>
+        </div>
+        <% } %>
+        
+        <% if (error) { %>
+            <p><%= error %></p>
+        <% } %>
+        
+    </div>
+</body>
+</html>
