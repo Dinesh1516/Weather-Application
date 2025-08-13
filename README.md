@@ -6,6 +6,22 @@ A lightweight, server-rendered web application that fetches and displays current
 
 A lightweight, server-rendered web application that fetches and displays current, daily, and weekly weather forecasts using the OpenWeather API.
 
+
+
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/0efcf99b-7de5-4350-9ae0-5af89a803b46"  width="100%"></td>
+    <td><img src="https://github.com/user-attachments/assets/8c598e33-28e0-4bb2-8062-0fc5a81b1875" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/b1697ac8-d21e-4146-a80e-92f100fbcc2a" width="100%"></td>
+    <td><img src="https://github.com/user-attachments/assets/24ddc32d-ade5-46e5-b182-5e94e0f6f7ca" width="100%"></td>
+ 
+  </tr>
+</table>
+
+
 ---
 
 ## Features
