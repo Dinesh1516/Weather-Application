@@ -1,32 +1,36 @@
+
 Weather-Application
 A lightweight, server-rendered web application that fetches and displays current, daily, and weekly weather forecasts using the OpenWeather API.
 
-Features
-Current weather: Shows current conditions—temperature, humidity, wind, and sky description.
+# Weather-Application
 
-Daily forecast: Provides a day-by-day outlook for the upcoming days.
+A lightweight, server-rendered web application that fetches and displays current, daily, and weekly weather forecasts using the OpenWeather API.
 
-Weekly overview: Offers a broader weekly forecast summary.
+---
 
-Built with Node.js, Express, and EJS templates.
+## Features
 
-Fetches data using the OpenWeather API. 
-GitHub
+- **Current weather**: Shows current conditions—temperature, humidity, wind, and sky description.
+- **Daily forecast**: Provides a day-by-day outlook for the upcoming days.
+- **Weekly overview**: Offers a broader weekly forecast summary.
+- Built with **Node.js**, **Express**, and **EJS** templates.
+- Fetches data using the **OpenWeather API**.
 
-Technologies Used
-Node.js & Express – backend server and routing
+---
 
-EJS – server-side templating engine (HTML views) 
-GitHub
+## Technologies Used
 
-JavaScript – logic for retrieving weather from OpenWeather API
+- **Node.js** & **Express** – backend server and routing  
+- **EJS** – server-side templating engine (HTML views)  
+- **JavaScript** – logic for retrieving weather from OpenWeather API  
+- **CSS** – styling front-end components  
+- **OpenWeather API** – weather data provider
 
-CSS – styling front-end components
+---
 
-OpenWeather API – weather data provider 
-GitHub
+## Installation
 
-Installation
+```bash
 # Clone the repo
 git clone https://github.com/Dinesh1516/Weather-Application.git
 cd Weather-Application
@@ -40,6 +44,9 @@ export OPENWEATHER_API_KEY="YOUR_API_KEY"
 
 # Or add it to an .env file if using dotenv
 Usage
+bash
+Copy
+Edit
 # Start the server
 npm start
 
@@ -54,9 +61,12 @@ API Key: Sign up at OpenWeather to get a free API key.
 
 Environment variable: Your app should reference process.env.OPENWEATHER_API_KEY.
 
-Optionally customize views and styling in the views/ and public/ directories (if present).
+Optionally customize views and styling in the views/ and public/ directories.
 
 Project Structure (Example)
+plaintext
+Copy
+Edit
 Weather-Application/
 ├── public/           # static assets (CSS, images)
 ├── views/            # EJS template files
@@ -81,13 +91,9 @@ Open a Pull Request
 Please keep the code clean and include clear descriptions of your changes.
 
 Acknowledgments
-Weather data provided by OpenWeather API. 
-GitHub
+Weather data provided by OpenWeather API
 
 Inspired by similar open-source weather projects on GitHub.
 
 
-
-Handle errors and display friendly messages (e.g., invalid city).
-
-Support units toggle (Celsius/Fahrenheit).
+Ask ChatGPT
